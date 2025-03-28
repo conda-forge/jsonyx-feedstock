@@ -1,18 +1,18 @@
 {% set name = "jsonyx" %}
-{% set version = "1.2.1" %}
+{% set version = "2.0.0.post2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8c44b4392cf587d2ff4101484eb440c47d688a1b4c3278728e214069b39788bc
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 3717edb6dd6b0db365b8983d74999f36de3e0a38fc82313b8495594d3a8d6a03
 
 build:
-  skip: True  # [py<310]
+  skip: true  # [py<310]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   build:
