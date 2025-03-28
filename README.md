@@ -13,10 +13,9 @@ Development: https://github.com/nineteendo/jsonyx
 
 Documentation: https://jsonyx.readthedocs.io
 
-`jsonyx` is a robust JSON <http://json.org> manipulator for Python 3.10+.
-It is written in pure Python with an optional C extension for better
-performance and no dependencies
-
+`jsonyx` is a customizable [JSON](http://json.org) library for Python 3.8+. It
+is written in pure Python with an optional C extension for better performance
+and no dependencies.
 
 Current build status
 ====================

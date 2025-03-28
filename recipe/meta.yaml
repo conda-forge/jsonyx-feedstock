@@ -10,9 +10,9 @@ source:
   sha256: 3717edb6dd6b0db365b8983d74999f36de3e0a38fc82313b8495594d3a8d6a03
 
 build:
-  skip: true  # [py<310]
+  skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -38,9 +38,9 @@ test:
 
 about:
   home: https://github.com/nineteendo/jsonyx
-  summary: 'Robust JSON manipulator for Python'
+  summary: 'Customizable JSON library for Python'
   description: |
-    `jsonyx` is a robust JSON <http://json.org> manipulator for Python 3.10+.
+    `jsonyx` is a customizable [JSON](http://json.org) library for Python 3.8+.
     It is written in pure Python with an optional C extension for better
     performance and no dependencies
   license: GPL-3.0-or-later
