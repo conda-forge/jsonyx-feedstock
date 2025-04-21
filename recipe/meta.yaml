@@ -1,5 +1,5 @@
 {% set name = "jsonyx" %}
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 806a9adee934afa0cc676811f358f5fe6c7b553b3fd4b48b6cacaacebea4af9d
+  sha256: b1fed1a8e7de20f9d3a5752d36e866e6ca0eefb00f46e8fb8a924d9e97db755e
 
 build:
   skip: true  # [py<38]
