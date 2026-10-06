@@ -1,5 +1,5 @@
 {% set name = "jsonyx" %}
-{% set version = "2.3.0" %}
+{% set version = "2.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 77b14b32aaf1f2f77b997114d8dcaebd91885b7562b0718687e4e571ddbfb762
+  sha256: d730f4685857ca5a79a2cf1984d4243d35a28bed42550586dd111351eda5fb15
 
 build:
   skip: true  # [py<38]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 2
+  number: 0
 
 requirements:
   build:
