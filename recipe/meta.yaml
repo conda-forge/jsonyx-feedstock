@@ -27,12 +27,12 @@ requirements:
 
 test:
   imports:
+    - _jsonyx
     - jsonyx
     - jsonyx.allow
     - jsonyx.test
   requires:
     - pip
-    - pytest
   commands:
     - pip check
 
